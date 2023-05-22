@@ -6,15 +6,18 @@ const citas = [
   { Mascota: 'Sifon', Dueño: 'Flecha', Fecha: '2023-06-10', Hora: '09:24', Sintomas: 'Duerme mucho' }
 ];
 const ListaCitas = citas.map(cita =>
+  <div class="container">
   <div className="cita" key={cita.Mascota}>
     <p>Mascota: <span>{cita.Mascota}</span></p>
     <p>Dueño: <span>{cita.Dueño}</span></p>
     <p>Fecha: <span>{cita.Fecha}</span></p>
     <p>Hora: <span>{cita.Hora}</span></p>
     <p>Sintomas: <span>{cita.Sintomas}</span></p>
-    <button className="button elimnar u-full-width">Eliminar ×</button>    
+    <button className="button elimnar u-full-width">Eliminar ×</button>  
+     
   </div>
-
+  <br></br> 
+  </div>
 );
 function CrearCita() {
   return (
