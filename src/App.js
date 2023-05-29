@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import Formulario from './components/CrearCita';
 import Listado from './components/Listado';
+import { useState } from 'react';
 
 
 function App() {
   const [citas, setCitas] = useState([])
-
+  console.log(citas);
   return (
     <div>
 
@@ -14,7 +14,7 @@ function App() {
       <div class="container">
         <div class="row">
           <div class="one-half column">
-            <Formulario setCitas={setCitas} />
+            <Formulario citas={citas} setCitas={setCitas} />
           </div>
           <div class="one-half column">
             <div >
